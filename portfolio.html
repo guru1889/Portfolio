@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div style="padding-left: 100px;">portfolio</div>
+        <ul class="list">
+            <a href="#about"><li>about me</li></a>
+            <a href="#skills"><li>skills</li></a>
+            <a href="#project"><li>projects</li></a>
+            <a href="#contact"><li>contact me</li></a>
+
+        </ul>
+    </div>
+    <div class="aboutsection" id="about">
+    <div class="myphoto">
+        <img src="images/i.jpg" height="500px" alt="">
+    </div>
+    <div class="about">
+    <h2>Lakshmi Narayana Guru</h2>
+    <p>
+        Hello! I’m Lakshmi Narayana Guru, a Computer Science and Engineering graduate (B.E.) with a passion for technology and software development. I enjoy creating efficient and user-friendly solutions, exploring new technologies, and building projects that make a real impact.
+
+        I have hands-on experience with web development (HTML, CSS, JavaScript, React) and programming in Python and C. I’m eager to learn, take on challenges, and contribute to innovative projects in the tech industry.
+
+        In my free time, I like exploring new tech trends, experimenting with small projects, and expanding my knowledge to stay up-to-date with the latest in technology.
+    </p>
+</div>
+
+    </div>
+    <div class="sector">
+        <ul>
+             <h1 class="tab active-link" id="sk" onclick="disp('skills','sk')"><li >Skills</li></h1>
+            <h1 class="tab" id="edu" onclick="disp('education','edu')"><li>Education</li></h1>
+            <h1 class="tab" id="int" onclick="disp('experience','int')"><li>Internship</li></h1>
+        </ul>
+    </div>
+    <div  id="skills" class="cont active">
+        <img src="images/html.png" alt="">
+        <img src="images/css.png" alt=""> 
+        <img src="images/js.png" alt="">
+        <img src="images/bootstrap.png" alt="">
+        <img src="images/react.png" alt="">
+        <img src="images/python.png" alt="">
+        <img src="images/c.png" alt="">
+    </div>
+    <div id="education" class="cont">
+        <h1>B.E. Computer Science And Engineering(2021-2025)</h1>
+        <h2>V.V. College Of Engineering</h2>
+        <h4>CGPA:8.225</h4>
+
+    </div>
+    <div id="experience" class="cont">
+        <h1>Full Stack Developer - Intern.</h1>
+        <h1>AK INFO PARK - Nagarcoil.</h1>
+        <h2>Aug-2024 to sep-2024.</h2>
+    </div>
+    <div><h1 style="color: red; text-align: center;">Projects</h1></div>
+    <div class="project-container">
+    <div class="project" id="project" onmouseover="ch(this)" onmouseout="ch2(this)">
+        
+        <h1>Portfolio Website</h1>
+    <p>
+        I developed a responsive personal portfolio website to showcase my skills, education, and projects. 
+        The site is designed using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>, featuring smooth navigation 
+        and a clean, modern layout.
+    </p>
+    <p><b>Technologies Used:</b> HTML5, CSS3, JavaScript</p>
+    <p><b>Outcome:</b> This project improved my front-end development skills and serves as a platform to showcase my work.</p>
+</div>
+<div class="project" id="project" onmouseover="ch(this)" onmouseout="ch2(this)">
+        
+        <h1>Real Time Face Recognition Security System</h1>
+        <p>Role:Quardinater</p>
+    <p>
+       Built a security face recognition system using Python and OpenCV for real-time identification and 
+       unauthorized detection. Integrated KNN classification and alarm triggers, with quality-controlled face data 
+       collection for enhanced security.
+    </p>
+    <p><b>Technologies Used:</b> Python,Open CV</p>
+    <p><b>Outcome:</b> This project improved my logical Thinking and my Team work.</p>
+</div>
+</div>
+    </div>
+    <br><br>
+    <div id="contact">
+        <div class="personal">
+            <ul>
+                <li>Name: Lakshmi Narayana Guru M</li>
+            <li>Email: narayanaguru.m@gmail.com</li>
+            <li>Mobile: +91 6380465924</li>
+            <li> <a href="https://www.linkedin.com/in/lakshmi-narayana-guru-m-88a2012a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="images/linkedin" height="10px" alt="" >Linkedin</a></li>
+       
+            </ul>
+             </div>
+             <div class="vertical-line"></div>
+             <div class="formses">
+                <form >
+                    <br>
+                    <label for="name">Name:
+                    </label>
+                    <input type="text" id="name"><br><br>
+                    <label for="mobile">Mobile:</label>
+                    <input type="number" id="number"><br><br>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail"><br><br>
+                    <button onclick="sub()">submit</button>
+                    <button>reset</button>
+                </form>
+             </div>
+
+    </div>
+    </body>
+
+<script>
+    const tab=document.getElementsByClassName("tab")
+    const link=document.getElementsByClassName("cont")
+    function disp(temp,temp2){
+        for(let i of link){
+            i.classList.remove("active")
+        }
+         for(let t of tab){
+            t.classList.remove("active-link")
+        }
+        document.getElementById(temp2).classList.add("active-link")
+        document.getElementById(temp).classList.add("active")
+    }
+    function sub(){
+        let name=document.getElementById("name").value
+        let number=document.getElementById("number").value
+        let mail=document.getElementById("mail").value
+        if(name==""||number==""||mail==""){
+            alert("enter all the feild")
+        }
+    }
+
+
+    function ch(element){
+        element.style.backgroundColor = "white";
+        element.style.color="black"
+    }
+    function ch2(element){
+        element.style.backgroundColor = "";
+        element.style.color=""
+    }
+</script>
+</html>

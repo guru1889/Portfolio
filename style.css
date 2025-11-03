@@ -1,0 +1,187 @@
+
+    body{
+        margin: 0%;
+        
+        background-color: rgb(68, 66, 66);
+        color: white;
+    }
+    .nav{
+        margin: 0%;
+        background-color: black;
+        color: rgb(248, 244, 244);
+        display: flex;
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed top;
+        margin-top: 0%;
+    }
+    .list{
+        display: flex;
+        padding: 20px;
+        
+    }
+    .list li{
+        display: flex;
+        list-style: none;
+        cursor: pointer;
+        padding: 20px;
+        text-decoration: none;
+    }
+    .list a{
+        text-decoration: none;
+        color: wheat;
+    }
+    .aboutsection{
+       padding-top: 90px;
+        margin: 5px;
+        display: flex;
+    }
+    .myphoto{
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        align-items: center;
+    }
+   .about {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    justify-content: center;
+    align-items: flex-start; /* align text to the left */
+    flex: 1;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+    .sector{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .sector ul{
+        display: flex;
+    }
+    .sector li{
+        padding: 10px;
+        color: rgb(245, 36, 36);
+        list-style: none;
+        cursor: pointer;
+    }
+    .sector a{
+        text-decoration: none;
+        
+    }
+    #skills{
+       text-align: center;
+    }
+    #skills img{
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        
+    }
+    #education{
+       
+        text-align: center;
+    }
+    #experience{
+        text-align: center;
+    }
+    .cont{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    .tab{
+        cursor: pointer;
+        position: relative;
+    }
+    .tab::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: #f44336;
+        transition: .3s;
+        position: absolute;
+        left: 0;
+        /* bottom: 6px; */
+    }
+    .tab.active-link::after{
+        width: 100%;
+        
+        position: relative;
+    }
+.project-container{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    gap:30px;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* Vertically centers content */
+    align-items: center;        /* Horizontally centers content */
+    text-align: center;         /* Centers text */
+    padding: 5px;
+    border: 2px white solid;
+    border-radius: 10px;  
+    width: 30%;
+    
+}
+.project h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    
+}
+.project p {
+    max-width: 700px;
+    line-height: 1.6;
+    
+}
+.project li{
+    text-align: justify;
+}
+#contact a{
+    text-decoration: none;
+    color: white;
+}
+#contact{
+    display: flex;
+    background-color: rgb(247, 48, 48);
+}
+.personal{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.personal li{
+    list-style: none;
+}
+.formses input{
+    background: transparent;
+    border-radius: 5px;
+}
+.formses{
+    padding-top: 10px;
+    text-align: justify;
+    padding: 5px;
+}
+.vertical-line {
+    width: 1px;           /* thickness of the line */
+    height: 200px;        /* height of the line */
+    background-color:white; /* line color */
+    margin: 0 10px;       /* optional spacing */
+}
+
+.project:hover {
+    transform: scale(1.05); /* zoom 5% bigger */
+}
+
