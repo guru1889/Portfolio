@@ -184,4 +184,19 @@
 .project:hover {
     transform: scale(1.05); /* zoom 5% bigger */
 }
+.resume{
+    text-decoration: none;
+    color: black;
+    
+    
+}
+.rcontainer{
+    height: 40px;
+    width: fit-content;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
 
